@@ -1,0 +1,7 @@
+c:\users\dennis\source\repos\DuckUSim\DuckUSim\obj\Debug\DuckUSim.csprojAssemblyReference.cache
+c:\users\dennis\source\repos\DuckUSim\DuckUSim\obj\Debug\DuckUSim.csproj.CoreCompileInputs.cache
+c:\users\dennis\source\repos\DuckUSim\DuckUSim\bin\Debug\DuckUSim.exe.config
+c:\users\dennis\source\repos\DuckUSim\DuckUSim\bin\Debug\DuckUSim.exe
+c:\users\dennis\source\repos\DuckUSim\DuckUSim\bin\Debug\DuckUSim.pdb
+c:\users\dennis\source\repos\DuckUSim\DuckUSim\obj\Debug\DuckUSim.exe
+c:\users\dennis\source\repos\DuckUSim\DuckUSim\obj\Debug\DuckUSim.pdb
