@@ -7,8 +7,10 @@ using System.Threading;
 
 namespace hello_world
 {
+
     class Zoop
     {
+
         private string welcome;
         private Animal giraffe;
         private Snake snake;
@@ -17,7 +19,7 @@ namespace hello_world
         private Crocodile crocodile;
         private List<Animal> animals;
         private int numberOfAnimals;
-           
+
         public Zoop()
         {
             welcome = "Welcome too the Zoo";
@@ -27,17 +29,42 @@ namespace hello_world
             numberOfAnimals = animals.Count();
         }
 
-        public void PrintWelcome()
+        public void Start()
         {
             Console.WriteLine(welcome);
-            Console.WriteLine("We have "+ numberOfAnimals + " animals in this zoo:");
+            Console.WriteLine("We have " + numberOfAnimals + " animals in this zoo:");
             Thread.Sleep(2000);
             for (int i = 0; i < numberOfAnimals; i++)
             {
-                Console.WriteLine("We have " + animals[i].GetName() + " the " + animals[i].GetSpecies());
-                Thread.Sleep(2000);
+                if (i < (numberOfAnimals - 1))
+                {
+                    Console.WriteLine("We have " + animals[i].GetName() + " the " + animals[i].GetSpecies());
+                    Thread.Sleep(2000);
+                }
+                else
+                {
+                    Console.WriteLine("And finally we have " + animals[i].GetName() + " the " + animals[i].GetSpecies());
+                    Thread.Sleep(2000);
+                }
             }
-            Console.ReadLine();
+            Console.WriteLine("if you want to hear the lion roar type roar");
+            string input = Console.ReadLine();
+
+            if (input == "roar")
+            {
+                int numberOfLions = 0;
+                foreach (Animal animal in animals)
+                {
+                    if (animal.GetSpecies() == "lion")
+                    numberOfLions++;
+                }
+
+                for (int i = 0; i < numberOfLions; i++)
+                {
+                    lion.Roar();
+                }
+            }
+            Console.Read();
         }
 
         public void addAnimals()

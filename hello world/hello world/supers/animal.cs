@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace hello_world
 {
-    class Animal
+    abstract class Animal
     {
         protected string name;
         protected string species;

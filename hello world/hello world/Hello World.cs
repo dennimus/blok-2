@@ -11,8 +11,7 @@ namespace hello_world
         static void Main(string[] args)
         {
             Zoop Zoo = new Zoop();
-            Zoo.PrintWelcome();
-
+            Zoo.Start();
         }
     }
 }

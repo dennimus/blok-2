@@ -13,5 +13,10 @@ namespace hello_world
         {
             species = "Lion";
         }
+
+        public void Roar()
+        {
+            Console.WriteLine("Miauw");
+        }
     }
 }
