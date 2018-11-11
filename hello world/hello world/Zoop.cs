@@ -47,23 +47,9 @@ namespace hello_world
                     Thread.Sleep(2000);
                 }
             }
-            Console.WriteLine("if you want to hear the lion roar type roar");
+            Console.WriteLine("Commands Roar, Growl");
             string input = Console.ReadLine();
-
-            if (input == "roar")
-            {
-                int numberOfLions = 0;
-                foreach (Animal animal in animals)
-                {
-                    if (animal.GetSpecies() == "lion")
-                    numberOfLions++;
-                }
-
-                for (int i = 0; i < numberOfLions; i++)
-                {
-                    lion.Roar();
-                }
-            }
+            inputHandler(input.ToLower());
             Console.Read();
         }
 
@@ -83,6 +69,42 @@ namespace hello_world
             lion = new Lion("Simba");
             lion2 = new Lion("Nala");
             crocodile = new Crocodile("Dundee");
+        }
+
+        public void inputHandler(string input)
+        {
+            if (input == "roar")
+            {
+                int numberOfLions = 0;
+                foreach (Animal animal in animals)
+                {
+                    if (animal.GetSpecies() == "Lion")
+                    {
+                        numberOfLions++;
+                    }
+                }
+
+                for (int i = 0; i < numberOfLions; i++)
+                {
+                    lion.Roar();
+                }
+            }
+            else if (input == "growl")
+            {
+                int numberOfCrocs = 0;
+                foreach (Animal animal in animals)
+                {
+                    if (animal.GetSpecies() == "Crocodile")
+                    {
+                        numberOfCrocs++;
+                    }
+                }
+
+                for (int i = 0; i < numberOfCrocs; i++)
+                {
+                    crocodile.Growl();
+                }
+            }
         }
     }
 }

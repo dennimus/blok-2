@@ -13,6 +13,11 @@ namespace hello_world
         {
             species = "Crocodile";
         }
+        
+        public void Growl()
+        {
+            Console.WriteLine("hiss");
+        }
 
     }
 }
